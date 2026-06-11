@@ -193,6 +193,19 @@ export const TabsIndicators = (props: TabsIndicatorsProps) => {
     return () => window.removeEventListener('resize', handleResize);
   }, [updateCSSVariables]);
 
+  useEffect(() => {
+    // ResizeObserver is not available in some environments (e.g. Jest/jsdom)
+    if (typeof ResizeObserver === 'undefined') {
+      return;
+    }
+
+    const observer = new ResizeObserver(() => updateCSSVariables());
+    for (const tab of tabRefs.current.values()) {
+      observer.observe(tab);
+    }
+    return () => observer.disconnect();
+  }, [updateCSSVariables, tabRefs.current.size]);
+
   return (
     <>
       <div className={classes.root} />
