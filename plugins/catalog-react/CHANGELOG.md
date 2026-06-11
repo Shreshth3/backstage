@@ -1,5 +1,17 @@
 # @backstage/plugin-catalog-react
 
+## 3.1.0-next.2
+
+### Minor Changes
+
+- 4212b78: Allow full text searching of Location target URLs in catalog tables
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/ui@0.16.0-next.1
+  - @backstage/core-compat-api@0.5.12-next.2
+
 ## 3.0.1-next.1
 
 ### Patch Changes

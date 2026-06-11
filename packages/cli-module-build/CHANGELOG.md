@@ -1,5 +1,11 @@
 # @backstage/cli-module-build
 
+## 0.1.4-next.1
+
+### Patch Changes
+
+- 696c78c: The `--help` output for commands now shows a generated usage line that lists the available flags and any positional arguments the command accepts.
+
 ## 0.1.4-next.0
 
 ### Patch Changes

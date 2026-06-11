@@ -1,5 +1,13 @@
 # @backstage/plugin-app
 
+## 0.4.7-next.2
+
+### Patch Changes
+
+- 33d03ed: fix: make Toast text content selectable
+- Updated dependencies
+  - @backstage/ui@0.16.0-next.1
+
 ## 0.4.7-next.1
 
 ### Patch Changes
